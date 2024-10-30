@@ -1,0 +1,35 @@
+// Section Heading
+.sectionTitle {
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 4px;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-weight  : 300;
+
+    &.subtitleXL {
+      @include subtitleOne;
+    }
+
+    &.subtitleL {
+      @include subtitleTwo;
+    }
+
+    &.subtitle {
+      @include subtitleThree;
+    }
+
+    +p {
+      margin-top: 15px;
+    }
+  }
+
+  .btnSec {
+    margin: 24px 0 0;
+  }
+}

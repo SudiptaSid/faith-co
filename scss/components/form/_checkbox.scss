@@ -1,0 +1,51 @@
+// Checkbox
+.customCheckbox {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 0;
+  cursor: pointer;
+  user-select: none;
+  z-index: 4;
+
+  .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: $whiteClr;
+    border: 1px solid $textClrThree;
+    border-radius: 4px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 6px;
+      top: 3px;
+      width: 5px;
+      height: 8px;
+      border: solid $whiteClr;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked ~ .checkmark {
+      background-color: $mainClr;
+      border-color: lighten($mainClr, 10%);
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+}

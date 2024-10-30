@@ -1,0 +1,45 @@
+.owl-theme {
+  .owl-nav {
+    display: flex;
+    gap: 15px;
+
+    [class*="owl-"] {
+      margin: 0;
+      transition: var(--transition);
+
+      &.owl-prev,
+      &.owl-next {
+        @include iconBox;
+        color: $textClrOne;
+        background-color: $whiteClr;
+
+        &:hover {
+          color: $whiteClr;
+          background-color: $mainClr;
+        }
+      }
+    }
+  }
+
+  .owl-dots {
+    margin-top: 0 !important;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .owl-dot {
+      span {
+        margin: 0;
+        background-color: $whiteClr;
+        transition: var(--transition);
+      }
+
+      &:hover,
+      &.active {
+        span {
+          background-color: $mainClr;
+        }
+      }
+    }
+  }
+}

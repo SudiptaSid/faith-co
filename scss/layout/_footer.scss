@@ -1,0 +1,85 @@
+// Footer
+.mainFooter {
+  .footerTop {
+    padding: 60px 0;
+    background-color: $mainClr;
+
+    @include md {
+      padding: 40px 0;
+    }
+
+    a {
+      color: $whiteClr;
+
+      &:hover {
+        color: $textClrTwo;
+      }
+    }
+
+    .titleFooter {
+      margin-bottom: 24px;
+
+      h6 {
+        color: $textClrThree;
+        text-transform: capitalize;
+        margin-bottom: 0;
+      }
+    }
+
+    .contactFooter {
+      color: $whiteClr;
+
+      ul {
+        @include list;
+
+        li {
+          a,
+          span {
+            @include iconLink;
+          }
+        }
+      }
+    }
+
+    .linkFooter {
+      ul {
+        @include list;
+      }
+    }
+
+    .logoFooter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 12px;
+      background-color: $whiteClr;
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        li {
+          a {
+            display: inline-block;
+
+            img {
+              height: 42px;
+
+              @include md {
+                height: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,27 @@
+// One
+.serviceOne {
+  padding: 80px 0;
+
+  @include md {
+    padding: 50px 0;
+  }
+
+  .serviceSliderOne {
+    .owl-dots {
+      margin-top: 32px !important;
+
+      .owl-dot {
+        span {
+          background-color: $textClrThree;
+        }
+
+        &:hover,
+        &.active {
+          span {
+            background-color: $mainClr;
+          }
+        }
+      }
+    }
+  }
+}

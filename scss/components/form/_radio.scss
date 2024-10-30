@@ -1,0 +1,45 @@
+// Radio
+.customRadio {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 0;
+  cursor: pointer;
+  user-select: none;
+  z-index: 4;
+
+  .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border: 1px solid $textClrThree;
+    border-radius: 50%;
+    z-index: -1;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      width: 6px;
+      height: 6px;
+      top: 5px;
+      left: 5px;
+      background-color: $mainClr;
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .checkmark {
+      &:after {
+        display: block;
+      }
+    }
+  }
+}

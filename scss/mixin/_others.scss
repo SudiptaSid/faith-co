@@ -1,0 +1,51 @@
+// Logo
+@mixin logo {
+  display: inline-flex;
+  flex-shrink: 0;
+
+  img {
+    height: 50px;
+
+    @include md {
+      height: 24px;
+    }
+  }
+}
+
+// Icon Box
+@mixin iconBox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0;
+}
+
+// Icon Link
+@mixin iconLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  em {
+    font-size: 1.5em;
+  }
+}
+
+// List
+@mixin list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  li {
+    a {
+      display: block;
+    }
+  }
+}

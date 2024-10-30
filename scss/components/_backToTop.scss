@@ -1,0 +1,21 @@
+// Back To Top
+#backToTop {
+  @include iconBox;
+  color: $whiteClr;
+  background-color: lighten($mainClr, 10%);
+  opacity: 0;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9;
+
+  &:hover {
+    color: $whiteClr;
+    background-color: lighten($mainClr, 15%);
+  }
+
+  &.show {
+    opacity: 1;
+  }
+}

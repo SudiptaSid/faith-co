@@ -1,0 +1,48 @@
+// Btn
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: none;
+  outline: none;
+  transition: var(--transition);
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &Primary {
+    color: $whiteClr !important;
+    background-color: $mainClr !important;
+    border-color: lighten($mainClr, 10%) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $whiteClr !important;
+      background-color: lighten($mainClr, 10%) !important;
+      border-color: lighten($mainClr, 10%) !important;
+    }
+  }
+}
+
+// Btn Set
+.btnSet {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 15px;
+}

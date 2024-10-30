@@ -1,0 +1,44 @@
+// One
+.heroBannerOne {
+  position: relative;
+
+  .heroItemOne {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 240px 0 140px;
+
+    @include md {
+      padding: 100px 0 60px 0;
+    }
+
+    .bgBox {
+      background-color: rgba($textClrOne, 0.8);
+      max-width: 767px;
+
+      .sectionTitle {
+        padding: 32px;
+        color: $whiteClr;
+
+        @include md {
+          padding: 24px;
+        }
+
+        h1,
+        h2 {
+          margin-bottom: 10px;
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  .heroSlider {
+    .owl-nav {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

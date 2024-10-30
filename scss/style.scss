@@ -1,0 +1,53 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Icons */
+@import "../vendors/icons/style.css";
+
+/* Bootstrap */
+@import "../vendors/bootstrap/scss/bootstrap";
+
+/* Owl Carousel */
+@import "../vendors/owlcarousel/scss/owl.carousel.scss";
+@import "../vendors/owlcarousel/scss/owl.theme.default.scss";
+
+/* Mixin */
+@import "mixin/color";
+@import "mixin/breakpoint";
+@import "mixin/font";
+@import "mixin/keyframe";
+@import "mixin/others";
+
+/* Base */
+@import "reset";
+
+/* Components */
+@import "components/form/buttons";
+@import "components/form/input";
+@import "components/form/checkbox";
+@import "components/form/radio";
+
+@import "components/loader";
+@import "components/backToTop";
+@import "components/heading";
+@import "components/accordian";
+@import "components/others";
+
+@import "components/cards/property";
+@import "components/cards/service";
+@import "components/cards/testimonial";
+
+/* Layout */
+@import "layout/header";
+@import "layout/footer";
+
+/* Plugin Edits */
+@import "plugins/bootstrap";
+@import "plugins/owlCarousel";
+
+/* Section */
+@import "sections/heroBanner";
+@import "sections/property";
+@import "sections/about";
+@import "sections/service";
+@import "sections/testimonial";

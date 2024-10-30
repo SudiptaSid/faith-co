@@ -1,0 +1,37 @@
+// One
+.testimonialCardOne {
+  text-align: center;
+  background-color: $textClrFour;
+  border-radius: 10px;
+  padding: 32px;
+
+  @include md {
+    padding: 24px 15px;
+  }
+
+  img {
+    height: 60px;
+  }
+
+  p {
+    margin: 32px 0;
+
+    @include md {
+      margin: 24px 0;
+    }
+  }
+
+  .info {
+    span {
+      display: block;
+      font-weight: 600;
+      color: $textClrOne;
+    }
+
+    a {
+      display: inline-block;
+      color: $blueClr;
+      font-weight: 600;
+    }
+  }
+}
