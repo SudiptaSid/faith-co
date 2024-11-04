@@ -1,1 +1,1 @@
-# Faith & Co. Ananda
+# Faith & Co.
